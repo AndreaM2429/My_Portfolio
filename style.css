@@ -149,19 +149,15 @@ h1 {
     line-height: 20px;
     color: #6070ff;
     text-decoration: none;
-    position:unset;
+    position: unset;
   }
-  
+
   .menu {
     width: 40px;
     border-radius: 8px;
     border: hidden;
     background: #fff;
     position: unset;
-  }
-
-  .menu {
-    display: none;
   }
 
   .desc {
