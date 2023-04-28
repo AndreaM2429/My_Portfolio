@@ -22,7 +22,7 @@ nav {
   width: 100%;
 }
 
-nav p {
+nav a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,6 +30,7 @@ nav p {
   line-height: 20px;
   color: #6070ff;
   width: 47%;
+  text-decoration: none;
 }
 
 .menu {
@@ -107,6 +108,16 @@ desc {
   color: #7f8cff;
 }
 
+.enlaces ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 50%;
+  padding: 2px;
+}
+
 .enlaces img {
   width: 19px;
 }
@@ -179,5 +190,9 @@ h1 {
     background-size: 100% 100%;
     top: 41px;
     height: 100vh;
+  }
+
+  .enlaces ul {
+    width: 200px;
   }
 }
