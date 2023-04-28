@@ -3,6 +3,8 @@ body {
 }
 
 header {
+  background-color: white;
+  background-size: 100% 100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -29,8 +31,10 @@ nav a {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  width: 47%;
   text-decoration: none;
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 
 .menu {
@@ -38,6 +42,9 @@ nav a {
   border-radius: 8px;
   border: hidden;
   background: #fff;
+  position: absolute;
+  right: 18px;
+  top: 10px;
 }
 
 button:hover {
@@ -63,6 +70,8 @@ button:disabled {
   background-size: 100% 100%;
   width: 100%;
   height: 604px;
+  position: absolute;
+  top: 8px;
 }
 
 desc {
@@ -74,7 +83,7 @@ desc {
   position: absolute;
   width: 100%;
   left: calc(50% - 375px / 2);
-  top: 92px;
+  top: 91px;
 }
 
 .desc h2 {
@@ -130,6 +139,25 @@ h1 {
 @media (min-width: 768px) {
   header {
     height: 72px;
+  }
+
+  nav a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+    text-decoration: none;
+    position:unset;
+  }
+  
+  .menu {
+    width: 40px;
+    border-radius: 8px;
+    border: hidden;
+    background: #fff;
+    position: unset;
   }
 
   .menu {
