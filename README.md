@@ -62,9 +62,9 @@ Welcome to my portfolio, here I will let you know about my projects.
 
 > In this section there are some features that you can notice in the project
 
-- **This project jhas a section about me**
+- **This project has a section about me**
 - **This project count with a HTML&CSS linters.**
-- **It is just the beginig of this project**
+- **This project has a work sections**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will add more information about me and my past projects**
+- [ ] **I will add the contact me section**
 - [ ] **I will continue dvelop the mobile and desktop versions**
 - [ ] **I won't implement any other change in this project until I recive a review**
 
