@@ -65,6 +65,7 @@ Welcome to my portfolio, here I will let you know about my projects.
 - **This project has a section about me**
 - **This project count with a HTML&CSS linters.**
 - **This project has a work sections**
+- **This project has a contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,21 +116,25 @@ You can deploy this project using:
 
 ## 👥 Author <a name="authors"></a>
 
-> I'm the only author from this project
-
 👤 **Andrea Manuel**
 
 - GitHub: [@AndreaM2429](https://github.com/AndreaM2429)
 - Twitter: [@twitter](https://twitter.com/AndreaManuelOr1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/andrea-manuel-2b075026a/)
 
+> Colaborator
+
+👤 **Dany AUGUSTIN**
+- GitHub: [@amiralda](https://github.com/amiralda)
+- Twitter: Unknown
+- LinkedIn: Unknown
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will add the contact me section**
-- [ ] **I will continue dvelop the mobile and desktop versions**
+- [ ] **I will setup the desktop version**
 - [ ] **I won't implement any other change in this project until I recive a review**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
