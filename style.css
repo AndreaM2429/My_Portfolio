@@ -449,8 +449,8 @@ h1 {
   border-bottom: solid 1px #dfe1e6;
 }
 
-.contact{
-  background-color: #6070FF;
+.contact {
+  background-color: #6070ff;
   background-size: 100% 100%;
   border-top-left-radius: 80px;
   min-height: 779px;
@@ -459,10 +459,12 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.contact img{
+
+.contact img {
   margin-bottom: 5px;
 }
-.seccont{
+
+.seccont {
   background-image: url(Img/contact\ form\ shapes-mobile.png);
   background-size: 100% 100%;
   display: flex;
@@ -470,65 +472,74 @@ h1 {
   align-items: center;
   margin-top: 20px;
 }
-.contact h2{
+
+.contact h2 {
   font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: white;
-margin-top: 105px;
-margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: white;
+  margin-top: 105px;
+  margin-bottom: 0;
 }
-.contact p{
+
+.contact p {
   font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
-margin-bottom: 52px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 52px;
 }
-input[type="text"], input[type="email"] {
+
+input[type="text"],
+input[type="email"] {
   height: 48px;
   width: 96%;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 17px;
   padding-left: 15px;
 }
-.contact textarea{
-  border: 1px solid #CFD8DC;
-border-radius: 8px;
-width: 96%;
-height: 170px;
-margin-bottom: 17px;
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-padding-top: 15px;
-padding-left: 15px;
+
+.contact textarea {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 96%;
+  height: 170px;
+  margin-bottom: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
-input[type="submit"]{
+
+input[type="submit"] {
   width: 142px;
-height: 48px;
-background: #FFFFFF;
-border-radius: 8px;
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-color: #6070FF;
-margin-bottom: 32px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  margin-bottom: 32px;
 }
-.continf, .formcon{
+
+.continf,
+.formcon {
   width: 90%;
 }
-.continf{
+
+.continf {
   display: flex;
   flex-direction: column;
   align-items: center;
