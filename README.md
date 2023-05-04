@@ -45,7 +45,7 @@ Welcome to my portfolio, here I will let you know about my projects.
 <details>
   <summary>CSS</summary>
   <ul>
-    > Add the mobile and desktop design.
+    > Add the mobile and desktop design using media query.
     <li>The <a href="https://github.com/microverseinc/curriculum-html-css/blob/main/html5.md">CSS</a> is used to provide the design in the index document</li>
   </ul>
 </details>
@@ -66,6 +66,7 @@ Welcome to my portfolio, here I will let you know about my projects.
 - **This project count with a HTML&CSS linters.**
 - **This project has a work sections**
 - **This project has a contact form**
+- **This project has a desktop version which start at width=768px**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,16 +126,17 @@ You can deploy this project using:
 > Colaborator
 
 👤 **Dany AUGUSTIN**
+
 - GitHub: [@amiralda](https://github.com/amiralda)
-- Twitter: Unknown
-- LinkedIn: Unknown
+- Twitter: [@amiralda](https://twitter.com/amiralda)
+- LinkedIn: [@dany-augustin](https://linkedin.com/in/dany-augustin)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will setup the desktop version**
+- [ ] **Add animations and transitions**
 - [ ] **I won't implement any other change in this project until I recive a review**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
