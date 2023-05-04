@@ -131,7 +131,8 @@ desc {
 }
 
 .menudesk,
-h1 {
+h1,
+.deskim {
   display: none;
 }
 
@@ -548,6 +549,16 @@ input[type="submit"] {
 @media (min-width: 768px) {
   header {
     height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 60px;
+    width: 90%;
   }
 
   nav a {
@@ -561,16 +572,23 @@ input[type="submit"] {
     position: unset;
   }
 
-  .menu {
+  .menu,
+  .desc h2,
+  .mobim,
+  #barrita {
     display: none;
+  }
+
+  .info {
+    background-image: url(Img/Header\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 41px;
+    height: 100vh;
   }
 
   .desc {
-    width: 70%;
-  }
-
-  .desc h2 {
-    display: none;
+    width: 80%;
   }
 
   .menudesk a {
@@ -599,7 +617,7 @@ input[type="submit"] {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 125%;
+    line-height: 60px;
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
@@ -612,15 +630,143 @@ input[type="submit"] {
     width: 100%;
   }
 
-  .info {
-    background-image: url(Img/Header\ bg.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    top: 41px;
-    height: 100vh;
-  }
-
   .enlaces ul {
     width: 200px;
+  }
+
+  .works {
+    grid-template-columns: 7% 86% 7%;
+  }
+
+  .card1 {
+    grid-area: 4/2/5/3;
+  }
+
+  .card2 {
+    grid-area: 5/2/6/3;
+    margin-bottom: 88px;
+  }
+
+  .card3 {
+    grid-area: 2/2/3/3;
+  }
+
+  .card4 {
+    grid-area: 3/2/4/3;
+    margin-bottom: 0;
+  }
+
+  .cg {
+    flex-direction: row;
+    gap: 17px;
+  }
+
+  .cg img {
+    width: 50%;
+  }
+
+  .c1dp {
+    font-size: 36px;
+    line-height: 52px;
+    color: #091e42;
+    width: 100%;
+  }
+
+  .li1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .lisec {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .deskdisp img {
+    width: 8px;
+  }
+
+  .ca1p {
+    font-size: 16px;
+  }
+
+  .c1desc {
+    width: 100%;
+  }
+
+  .deskim {
+    display: flex;
+  }
+
+  .direc {
+    flex-direction: row-reverse;
+  }
+
+  .aboutinfo {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .desc2 {
+    width: 50%;
+  }
+
+  .desc2 h2 {
+    margin: 0;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .loglan {
+    width: 67px;
+    height: 40%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 5px;
+    gap: 1px;
+  }
+
+  .loglan img {
+    margin: 0;
+    width: 40%;
+  }
+
+  .gal {
+    flex-direction: row;
+    gap: 7px;
+    font-size: 80%;
+  }
+
+  .continf {
+    width: 70%;
+  }
+
+  .formcon {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seccont {
+    background-image: url(Img/contact\ form\ background\ shapes.png);
+    margin: 5%;
+  }
+
+  .contact p {
+    margin-bottom: 20px;
+  }
+
+  .formcon input,
+  .formcon textarea {
+    border-radius: 0;
   }
 }
