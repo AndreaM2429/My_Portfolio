@@ -591,6 +591,8 @@ input[type="submit"] {
 
   .desc {
     width: 80%;
+    animation-duration: 3s;
+    animation-name: slider;
   }
 
   .menudesk a {
@@ -783,5 +785,49 @@ input[type="submit"] {
   input[type="email"],
   .formcon textarea {
     border-radius: 0;
+  }
+
+  .works img:hover {
+    transform: scale(0.9);
+    opacity: 65%;
+  }
+
+  @keyframes slider {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 20%;
+      width: 100%;
+    }
+  }
+
+  .enlaces img:hover,
+  .enlaces2 img:hover,
+  .menudesk a:hover {
+    transform: scale(1.5);
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    background-color: #ccdcf7;
+  }
+
+  #logo:hover {
+    animation-duration: 1s;
+    animation-name: rotate;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
