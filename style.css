@@ -555,6 +555,27 @@ input[type="submit"] {
     flex-direction: row;
     justify-content: center;
   }
+  
+  .works img:hover{
+  transform: scale(.9);
+  opacity: 65%;
+}
+  
+.desc{
+  animation-duration: 3s;
+  animation-name: slider;
+}
+
+@keyframes slider {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 20%;
+    width: 100%;
+  }
+}
 
   nav {
     justify-content: space-between;
