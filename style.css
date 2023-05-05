@@ -131,7 +131,8 @@ desc {
 }
 
 .menudesk,
-h1 {
+h1,
+.deskim {
   display: none;
 }
 
@@ -194,23 +195,24 @@ h1 {
   margin-bottom: 9px;
 }
 
-.c1desc ul {
+.c1desc ul,
+.c1desc img {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  align-items: center;
   margin: 0;
   padding: 0;
   gap: 10px;
 }
 
-.text li {
-  font-family: 'Poppins', sans-serif;
+.li1 {
+  font-family: 'Popins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  list-style-type: none;
 }
 
 .lisec {
@@ -532,6 +534,7 @@ input[type="submit"] {
   line-height: 24px;
   color: #6070ff;
   margin-bottom: 32px;
+  border-style: none;
 }
 
 .continf,
@@ -548,6 +551,16 @@ input[type="submit"] {
 @media (min-width: 768px) {
   header {
     height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 82px;
+    width: 90%;
   }
 
   nav a {
@@ -561,20 +574,33 @@ input[type="submit"] {
     position: unset;
   }
 
-  .menu {
+  .menu,
+  .desc h2,
+  .mobim,
+  #barrita {
     display: none;
+  }
+
+  .info {
+    background-image: url(Img/Header\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 41px;
+    height: 100vh;
   }
 
   .desc {
-    width: 70%;
-  }
-
-  .desc h2 {
-    display: none;
+    width: 80%;
   }
 
   .menudesk a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
   }
 
   .menudesk {
@@ -584,10 +610,10 @@ input[type="submit"] {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 20px;
-    color: #344563;
+    color: #6070ff;
     width: 258px;
     height: 40px;
   }
@@ -599,7 +625,7 @@ input[type="submit"] {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 125%;
+    line-height: 60px;
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
@@ -612,15 +638,150 @@ input[type="submit"] {
     width: 100%;
   }
 
-  .info {
-    background-image: url(Img/Header\ bg.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    top: 41px;
-    height: 100vh;
-  }
-
   .enlaces ul {
     width: 200px;
+  }
+
+  .works {
+    grid-template-columns: 7% 86% 7%;
+  }
+
+  .card1 {
+    grid-area: 4/2/5/3;
+  }
+
+  .card2 {
+    grid-area: 5/2/6/3;
+    margin-bottom: 88px;
+  }
+
+  .card3 {
+    grid-area: 2/2/3/3;
+  }
+
+  .card4 {
+    grid-area: 3/2/4/3;
+    margin-bottom: 0;
+  }
+
+  .cg {
+    flex-direction: row;
+    gap: 17px;
+  }
+
+  .cg img {
+    width: 50%;
+  }
+
+  .c1dp {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    width: 100%;
+  }
+
+  .li1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .lisec {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .deskdisp img {
+    width: 8px;
+  }
+
+  .ca1p {
+    font-size: 16px;
+  }
+
+  .c1desc {
+    width: 100%;
+  }
+
+  .deskim {
+    display: flex;
+  }
+
+  .direc {
+    flex-direction: row-reverse;
+  }
+
+  .aboutinfo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .desc2 {
+    width: 50%;
+  }
+
+  .desc2 h2 {
+    margin: 0;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .loglan {
+    width: 75px;
+    height: 80px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 5px;
+    gap: 1px;
+  }
+
+  .loglan img {
+    margin: 0;
+    width: 40%;
+  }
+
+  .glis {
+    color: #344563;
+  }
+
+  .gal {
+    flex-direction: row;
+    gap: 7px;
+    font-size: 80%;
+  }
+
+  .continf {
+    width: 70%;
+  }
+
+  .formcon {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seccont {
+    background-image: url(Img/contact\ form\ background\ shapes.png);
+    margin: 5%;
+  }
+
+  .contact p {
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .formcon textarea {
+    border-radius: 0;
   }
 }
