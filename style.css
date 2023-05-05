@@ -195,23 +195,24 @@ h1,
   margin-bottom: 9px;
 }
 
-.c1desc ul {
+.c1desc ul,
+.c1desc img {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  align-items: center;
   margin: 0;
   padding: 0;
   gap: 10px;
 }
 
-.text li {
-  font-family: 'Poppins', sans-serif;
+.li1 {
+  font-family: 'Popins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  list-style-type: none;
 }
 
 .lisec {
@@ -533,6 +534,7 @@ input[type="submit"] {
   line-height: 24px;
   color: #6070ff;
   margin-bottom: 32px;
+  border-style: none;
 }
 
 .continf,
@@ -556,8 +558,8 @@ input[type="submit"] {
 
   nav {
     justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 82px;
     width: 90%;
   }
 
@@ -593,6 +595,12 @@ input[type="submit"] {
 
   .menudesk a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
   }
 
   .menudesk {
@@ -602,10 +610,10 @@ input[type="submit"] {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 20px;
-    color: #344563;
+    color: #6070ff;
     width: 258px;
     height: 40px;
   }
@@ -666,19 +674,23 @@ input[type="submit"] {
   }
 
   .c1dp {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 52px;
     color: #091e42;
     width: 100%;
   }
 
   .li1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
   }
 
   .lisec {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -708,8 +720,6 @@ input[type="submit"] {
   .aboutinfo {
     display: flex;
     flex-direction: row;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .desc2 {
@@ -725,8 +735,8 @@ input[type="submit"] {
   }
 
   .loglan {
-    width: 67px;
-    height: 40%;
+    width: 75px;
+    height: 80px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -737,6 +747,10 @@ input[type="submit"] {
   .loglan img {
     margin: 0;
     width: 40%;
+  }
+
+  .glis {
+    color: #344563;
   }
 
   .gal {
@@ -765,7 +779,8 @@ input[type="submit"] {
     margin-bottom: 20px;
   }
 
-  .formcon input,
+  input[type="text"],
+  input[type="email"],
   .formcon textarea {
     border-radius: 0;
   }
