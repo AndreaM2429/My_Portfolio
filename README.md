@@ -12,6 +12,7 @@ Welcome to my portfolio, here I will let you know about my projects.
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -67,9 +68,17 @@ Welcome to my portfolio, here I will let you know about my projects.
 - **This project has a work sections**
 - **This project has a contact form**
 - **This project has a desktop version which start at width=768px**
+- **Count with a live demo**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Live demo <a name="live-demo"></a> 
+
+> There is the link where you can see my deployed **Portfolio**
+
+- [Portfolio Link](https://andream2429.github.io/Portfolio_setup_and_mobile_first/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -109,8 +118,7 @@ To see the index.html file you have to go to your browser and enter the directio
 ### Deployment
 
 You can deploy this project using:
-- **Web services and you can make any change and use for anything else different**
-> You can use this template for build your own portfolio.
+- **Follow the instructions in this [link](https://pages.github.com/)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +144,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add animations and transitions**
 - [ ] **I won't implement any other change in this project until I recive a review**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
