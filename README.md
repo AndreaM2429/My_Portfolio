@@ -69,6 +69,7 @@ Welcome to my portfolio, here I will let you know about my projects.
 - **This project has a contact form**
 - **This project has a desktop version which start at width=768px**
 - **Count with a live demo**
+- **[Here](https://www.loom.com/share/3462436b53e24ca6917c3b37de2aee0a) a record about my project, is a short presentation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
