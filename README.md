@@ -97,7 +97,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 - **Clone this repo on your local device you need to open Git Bash and paste the link with the command 
-> $ git clone https://github.com/AndreaM2429/Set_up_a_Hello_Microverse_project**
+> $ git clone https://github.com/AndreaM2429/Portfolio_setup_and_mobile_first**
 
 
 ### Install
@@ -132,7 +132,14 @@ You can deploy this project using:
 - Twitter: [@twitter](https://twitter.com/AndreaManuelOr1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/andrea-manuel-2b075026a/)
 
-> Colaborator
+> Collaborator
+
+👤 **Daniel Villalba Lynch**
+
+- GitHub: [@gdvl777](https://github.com/gdvl777)
+- LinkedIn: [Daniel Villalba Lynch](https://linkedin.com/in/dvillalba777)
+
+>Previous collaborator
 
 👤 **Dany AUGUSTIN**
 
