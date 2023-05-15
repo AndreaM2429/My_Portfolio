@@ -14,20 +14,21 @@
   <header>
     <nav>
       <a id="logo" href="index.html">My logo</a>
-      <button class="menu efecbot"><img src="Img/Icon - Menu.png" alt="Menu mobil"></button>
+      <button id="hambur" class="menu efecbot"><img src="Img/Icon - Menu.png" alt="Menu mobil"></button>
       <section class="menudesk">
         <a href="">Portfolio</a>
         <a href="">About</a>
         <a href="">Contact</a>
       </section>
     </nav>
-    <div class="menu">
-      <img src="" alt="close">
-      <ul>
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+    <div id="navmob" class="mobmen">
+      <div class="mobimg"><img id="close" src="Img/Icon-close.png" alt="close"></div>
+      <ul class="listyle">
+        <li><a href="#portfolio" class="move">Portfolio</a></li>
+        <li><a href="#aboutme" class="move">About</a></li>
+        <li><a href="#contact" class="move">Contact</a></li>
       </ul>
+      <div id="barrita"><img src="Img/Shape.png" alt="barra final"></div>
     </div>
   </header>
   <section class="info">
@@ -58,7 +59,7 @@
       </div>
     </div>
   </section>
-  <section class="works">
+  <section id="portfolio" class="works">
     <div class="card1 cg">
       <img src="Img/Snapshoot Portfolio.png" alt="Card1">
       <div class="deskdisp">
@@ -199,7 +200,7 @@
       </div>
     </div>
   </section>
-  <section class="aboutme">
+  <section id="aboutme" class="aboutme">
     <div class="aboutinfo">
       <div class="desc2">
         <h1>About my self</h1>
@@ -262,7 +263,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="seccont">
       <div class="continf">
         <h2>Contact me</h2>
@@ -280,5 +281,7 @@
     <img src="Img/Shape.png" alt="barra final" id="barrita">
   </section>
 </body>
+
+<script src="Script.js"></script>
 
 </html>
