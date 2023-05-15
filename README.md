@@ -140,6 +140,11 @@ You can deploy this project using:
 - Twitter: [@amiralda](https://twitter.com/amiralda)
 - LinkedIn: [@dany-augustin](https://linkedin.com/in/dany-augustin)
 
+👤 **Daniel Villalba Lynch**
+
+- GitHub: [@gdvl777](https://github.com/gdvl777)
+- LinkedIn: [Daniel Villalba Lynch](https://linkedin.com/in/dvillalba777)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
