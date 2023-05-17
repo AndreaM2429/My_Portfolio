@@ -736,8 +736,8 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
   .flexdesk,
-  .tags2 .deskim,
-  .deskim {
+  .deskim,
+  .tags2 .deskim {
     display: flex;
   }
 
