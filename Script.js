@@ -29,60 +29,134 @@ const projects = {
   list: ['Canopy', 'Back End Dev', '2015'],
   imag: ['Img/SnapshootPortfolio.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfolio3.png', 'Img/SnapshootPortfolio4.png', 'Img/icon-close.png', 'Img/iconExport.png', 'Img/github.svg', 'Img/Counter.png'],
   imagdesk: ['Img/SnapshootPortfolio.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfoliodesk.png', 'Img/SnapshootPortfolio4.png'],
-  desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley.',
-  tech: ['HTML', 'CSS', 'JavaScript'],
+  desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  tech: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
   live: 'https://andream2429.github.io/Portfolio_setup_and_mobile_first/',
   source: 'https://github.com/AndreaM2429/Portfolio_setup_and_mobile_first/',
 };
 
-function loadwindos(wprk, index) {
-  const index1 = 7;
+function loadwindos(index) {
+  // FUNCIONES PARA CREACION
+  function imagen(index) {
+    const imgcard = document.createElement('img');
+    imgcard.src = projects.imag[index];
+    imgcard.className = 'mobim d2';
+    return imgcard;
+  }
+  function imagendesk(index) {
+    const imgvdes = document.createElement('img');
+    imgvdes.src = projects.imagdesk[index];
+    imgvdes.className = 'deskim d2';
+    return imgvdes;
+  }
+  function titulo(index) {
+    const tit = document.createElement('h4');
+    tit.className = 'c1dp mobim';
+    tit.textContent = projects.name[index];
+    return tit;
+  }
+  function titulodesk(index) {
+    const titdesk = document.createElement('h4');
+    titdesk.className = 'c1dp deskim';
+    titdesk.textContent = projects.namedesk[index];
+    return titdesk;
+  }
+  function listacards(index1 = 7) {
+    const unlis = document.createElement('ul');
+    const lilis1 = document.createElement('li');
+    lilis1.className = 'li1';
+    lilis1.appendChild(document.createTextNode(projects.list[0]));
+    unlis.appendChild(lilis1);
+    const liscont = document.createElement('li');
+    const counter = document.createElement('img');
+    counter.src = projects.imag[index1];
+    liscont.appendChild(counter);
+    unlis.appendChild(liscont);
+    const lilissec = document.createElement('li');
+    lilissec.className = 'lisec';
+    lilissec.appendChild(document.createTextNode(projects.list[1]));
+    unlis.appendChild(lilissec);
+    const liscont2 = document.createElement('li');
+    const counter2 = document.createElement('img');
+    counter2.src = projects.imag[index1];
+    liscont2.appendChild(counter2);
+    unlis.appendChild(liscont2);
+    const lilissec2 = document.createElement('li');
+    lilissec2.className = 'lisec';
+    lilissec2.appendChild(document.createTextNode(projects.list[2]));
+    unlis.appendChild(lilissec2);
+    return unlis;
+  }
+  function listtech() {
+    const ultags = document.createElement('ul');
+    for (let i = 0; i < 2; i += 1) {
+      const litags = document.createElement('li');
+      litags.className = 'norm';
+      litags.appendChild(document.createTextNode(projects.tech[i]));
+      ultags.appendChild(litags);
+    }
+    const litags = document.createElement('li');
+    litags.className = 'special';
+    litags.appendChild(document.createTextNode(projects.tech[2]));
+    ultags.appendChild(litags);
+    const litagsd1 = document.createElement('li');
+    litagsd1.className = 'norm deskim';
+    litagsd1.appendChild(document.createTextNode(projects.tech[3]));
+    ultags.appendChild(litagsd1);
+    const litagsd2 = document.createElement('li');
+    litagsd2.className = 'special deskim';
+    litagsd2.appendChild(document.createTextNode(projects.tech[4]));
+    ultags.appendChild(litagsd2);
+    return ultags;
+  }
+
+  // EVENTO PARA CARDSJOB
+  window.addEventListener('load', () => {
+    const divcg = document.getElementsByClassName('cg');
+
+    const div1 = document.getElementsByClassName('deskdisp');
+    const divc1desc = document.getElementsByClassName('c1desc');
+    divc1desc[index].appendChild(titulo(index));
+    divc1desc[index].appendChild(titulodesk(index));
+    divc1desc[index].appendChild(listacards());
+    div1[index].appendChild(divc1desc[index]);
+
+    const pcard = document.getElementsByClassName('ca1p');
+    div1[index].appendChild(pcard[index]);
+
+    const divtagscard = document.getElementsByClassName('tags');
+    divtagscard[index].appendChild(listtech());
+    div1[index].appendChild(divtagscard[index]);
+
+    const botoncard = document.getElementsByClassName('showpop');
+    div1[index].appendChild(botoncard[index]);
+
+    divcg[index].appendChild(imagen(index));
+    divcg[index].appendChild(imagendesk(index));
+    divcg[index].appendChild(div1[index]);
+  });
+
+  // POPUP WINDOW
+
   const index4 = 4;
   const index5 = 5;
   const index6 = 6;
 
-  const unlis = document.createElement('ul');
   const divtul = document.createElement('div');
   divtul.className = 'padingul';
-  const lilis1 = document.createElement('li');
-  lilis1.className = 'li1';
-  lilis1.appendChild(document.createTextNode(projects.list[0]));
-  unlis.appendChild(lilis1);
-  const liscont = document.createElement('li');
-  const counter = document.createElement('img');
-  counter.src = projects.imag[index1];
-  liscont.appendChild(counter);
-  unlis.appendChild(liscont);
-  const lilissec = document.createElement('li');
-  lilissec.className = 'lisec';
-  lilissec.appendChild(document.createTextNode(projects.list[1]));
-  unlis.appendChild(lilissec);
-  const liscont2 = document.createElement('li');
-  const counter2 = document.createElement('img');
-  counter2.src = projects.imag[index1];
-  liscont2.appendChild(counter2);
-  unlis.appendChild(liscont2);
-  const lilissec2 = document.createElement('li');
-  lilissec2.className = 'lisec';
-  lilissec2.appendChild(document.createTextNode(projects.list[2]));
-  unlis.appendChild(lilissec2);
-  divtul.appendChild(unlis);
+
+  divtul.appendChild(listacards());
 
   const divtitins = document.createElement('div');
   divtitins.className = 'pop padingul';
-  const tit = document.createElement('h4');
-  tit.className = 'c1dp mobim';
-  tit.textContent = projects.name[index];
-  const titdesk = document.createElement('h4');
-  titdesk.className = 'c1dp deskim';
-  titdesk.textContent = projects.namedesk[index];
+
   const closebut = document.createElement('a');
   closebut.className = 'closepop botonclose efecbot';
   const imgclose = document.createElement('img');
   imgclose.src = projects.imag[index4];
   closebut.append(imgclose);
-  divtitins.appendChild(tit);
-  divtitins.appendChild(titdesk);
+  divtitins.appendChild(titulo(index));
+  divtitins.appendChild(titulodesk(index));
   divtitins.appendChild(closebut);
 
   const divdesk = document.createElement('div');
@@ -103,20 +177,9 @@ function loadwindos(wprk, index) {
   const divtagbut = document.createElement('div');
   divtagbut.className = 'columdesk';
   const divtags = document.createElement('div');
-  divtags.className = 'tags';
-  const ultags = document.createElement('ul');
-  ultags.className = 'padingul';
-  for (let i = 0; i < 2; i += 1) {
-    const litags = document.createElement('li');
-    litags.className = 'norm';
-    litags.appendChild(document.createTextNode(projects.tech[i]));
-    ultags.appendChild(litags);
-  }
-  const litags = document.createElement('li');
-  litags.className = 'special';
-  litags.appendChild(document.createTextNode(projects.tech[2]));
-  ultags.appendChild(litags);
-  divtags.appendChild(ultags);
+  divtags.className = 'tags2';
+
+  divtags.appendChild(listtech());
 
   divtagbut.appendChild(divtags);
 
@@ -150,15 +213,10 @@ function loadwindos(wprk, index) {
 
   const div = document.createElement('div');
   div.className = 'popup';
-  const img = document.createElement('img');
-  img.src = projects.imag[index];
-  img.className = 'mobim';
-  const imgvdes = document.createElement('img');
-  imgvdes.src = projects.imagdesk[index];
-  imgvdes.className = 'deskim d2';
+
   div.appendChild(divtit);
-  div.appendChild(img);
-  div.appendChild(imgvdes);
+  div.appendChild(imagen(index));
+  div.appendChild(imagendesk(index));
   div.appendChild(divdesk);
 
   const barra = document.createElement('img');
@@ -174,7 +232,7 @@ function loadwindos(wprk, index) {
 
 const works = document.querySelectorAll('.cg');
 for (let i = 0; i < works.length; i += 1) {
-  loadwindos(works[i], i);
+  loadwindos(i);
 }
 
 function showwindow(window, index) {
