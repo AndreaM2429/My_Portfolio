@@ -294,6 +294,7 @@ h1,
   margin: 0;
   padding-left: 6px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tags li {
@@ -628,9 +629,10 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   width: 92%;
+  height: 90vh;
+  overflow: scroll;
 }
 
 .pop {
@@ -641,7 +643,6 @@ input[type="submit"] {
 
 .padingul {
   padding: 0 27px;
-  margin: 0;
 }
 
 .tags {
@@ -650,6 +651,8 @@ input[type="submit"] {
 
 .divbot {
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .boton {
@@ -673,7 +676,8 @@ input[type="submit"] {
 .columdesk {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  gap: 15px;
 }
 
 .closepop {
@@ -692,7 +696,76 @@ input[type="submit"] {
   height: 14px;
 }
 
+.tags2 {
+  padding-left: 20px;
+}
+
+.tags2 ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 6px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tags2 li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  height: 24px;
+}
+
+.tags2 .deskim,
+.tags .deskim {
+  display: none;
+}
+
+.d2 {
+  width: 95%;
+}
+
 @media (min-width: 768px) {
+  .flexdesk,
+  .tags2 .deskim,
+  .deskim {
+    display: flex;
+  }
+
+  .flexdesk {
+    padding-top: 20px;
+  }
+
+  .pdes {
+    max-width: 70%;
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .tags2 {
+    width: 233px;
+    padding-left: 0;
+    padding-top: 5px;
+  }
+
+  .divbot {
+    justify-content: start;
+  }
+
+  .popup {
+    width: 80%;
+    height: 85vh;
+  }
+
   header {
     height: 72px;
     display: flex;
@@ -850,10 +923,7 @@ input[type="submit"] {
 
   .ca1p {
     font-size: 16px;
-  }
-
-  .deskim {
-    display: flex;
+    padding-bottom: 35px;
   }
 
   .direc {
@@ -970,24 +1040,5 @@ input[type="submit"] {
     to {
       transform: rotate(360deg);
     }
-  }
-
-  .d2 {
-    width: 30%;
-  }
-
-  .flexdesk {
-    display: flex;
-  }
-
-  .pdes {
-    width: 64%;
-    display: block;
-  }
-
-  .boton {
-    width: 100px;
-    height: 44px;
-    gap: 4px;
   }
 }
