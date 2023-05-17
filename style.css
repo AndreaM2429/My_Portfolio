@@ -72,7 +72,7 @@ nav a {
   color: #fff;
 }
 
-.mobmen.show {
+.show {
   display: flex;
   flex-direction: column;
   margin-left: 0;
@@ -233,7 +233,7 @@ h1,
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  width: 236px;
+  width: 100%;
 }
 
 .c1dp {
@@ -292,7 +292,7 @@ h1,
   flex-direction: row;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 6px;
   gap: 10px;
 }
 
@@ -602,6 +602,96 @@ input[type="submit"] {
   align-items: center;
 }
 
+.contenpop {
+  background-color: #c1c7d057;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  z-index: 100;
+}
+
+.showpop {
+  margin-left: 0%;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 92%;
+}
+
+.pop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.padingul {
+  padding: 0 27px;
+  margin: 0;
+}
+
+.tags {
+  width: 87%;
+}
+
+.divbot {
+  display: flex;
+}
+
+.boton {
+  display: flex;
+  width: 136px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #6070ff;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 5px;
+  gap: 10px;
+}
+
+#barrita2 {
+  margin-top: 20px;
+}
+
+.columdesk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closepop {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 5px;
+  gap: 10px;
+}
+
+.closepop img {
+  width: 14px;
+  height: 14px;
+}
+
 @media (min-width: 768px) {
   header {
     height: 72px;
@@ -631,7 +721,8 @@ input[type="submit"] {
   #hambur,
   .desc h2,
   .mobim,
-  #barrita {
+  #barrita,
+  #barrita2 {
     display: none;
   }
 
@@ -761,10 +852,6 @@ input[type="submit"] {
     font-size: 16px;
   }
 
-  .c1desc {
-    width: 100%;
-  }
-
   .deskim {
     display: flex;
   }
@@ -883,5 +970,24 @@ input[type="submit"] {
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .d2 {
+    width: 30%;
+  }
+
+  .flexdesk {
+    display: flex;
+  }
+
+  .pdes {
+    width: 64%;
+    display: block;
+  }
+
+  .boton {
+    width: 100px;
+    height: 44px;
+    gap: 4px;
   }
 }
