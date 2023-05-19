@@ -264,7 +264,6 @@ const formval = document.getElementById('formcont');
 formval[1].addEventListener('keydown', () => {
   clearTimeout(timeout);
   timeout = setTimeout(() => {
-    console.log('Has dejado de escribir en el input');
     clearTimeout(timeout);
   }, 1000);
 });
@@ -279,11 +278,8 @@ formval.addEventListener('submit', (event) => {
       event.preventDefault();
       message.style.display = 'flex';
     } else {
-      // event.preventDefault()
       message.style.display = 'none';
-      console.log(emailadd);
     }
-    console.log(check.lower.test(emailadd));
   }
   mostrar(formval[1].value);
 });
