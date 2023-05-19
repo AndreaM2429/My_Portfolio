@@ -287,3 +287,26 @@ formval.addEventListener('submit', (event) => {
   }
   mostrar(formval[1].value);
 });
+
+/// LocalStorage
+for (let i = 0; i < 3; i += 1) {
+  formval[i].addEventListener('keydown', () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      console.log('Has dejado de escribir en el input');
+      clearTimeout(timeout);
+      setStyles();
+    }, 1000);
+  });
+}
+
+function setStyles() {
+  const formval = document.getElementById('formcont');
+  for (let i = 0; i < 3; i += 1) {
+    if (formval[i].type !== 'submit') {
+      localStorage.setItem(formval[i].id, JSON.stringify(formval[i].value));
+      const currentval = localStorage.getItem(formval[i].id);
+      formval[i].value = currentval.replace(/['"]+/g, '');
+    }
+  }
+}
