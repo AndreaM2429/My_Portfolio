@@ -23,6 +23,29 @@ for (let i = 0; i < move.length; i += 1) {
   moveon(move[i]);
 }
 
+function setStyles() {
+  const formval = document.getElementById('formcont');
+  for (let i = 0; i < 3; i += 1) {
+    if (formval[i].type !== 'submit') {
+      localStorage.setItem(formval[i].id, JSON.stringify(formval[i].value));
+      const currentval = localStorage.getItem(formval[i].id);
+      formval[i].value = currentval.replace(/['"]+/g, '');
+    }
+  }
+}
+
+function showStyles() {
+  const formval = document.getElementById('formcont');
+  for (let i = 0; i < 3; i += 1) {
+    if (formval[i].type !== 'submit') {
+      const currentval = localStorage.getItem(formval[i].id);
+      if (currentval !== '' && currentval !== null) {
+        formval[i].value = currentval.replace(/['"]+/g, '');
+      }
+    }
+  }
+}
+
 const projects = {
   name: ['Tonic', 'Multi-post Stories', 'Tonic', 'Multi-post Stories'],
   namedesk: ['Facebook 360', 'Uber Navigation', 'Tonic', 'Multi-post Stories'],
@@ -296,35 +319,13 @@ formval.addEventListener('submit', (event) => {
 
 /// LocalStorage
 for (let i = 0; i < 3; i += 1) {
+  let timeout2;
   formval[i].addEventListener('keydown', () => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => {
+    clearTimeout(timeout2);
+    timeout2 = setTimeout(() => {
       console.log('Has dejado de escribir en el input');
-      clearTimeout(timeout);
+      clearTimeout(timeout2);
       setStyles();
     }, 1000);
   });
-}
-
-function setStyles() {
-  const formval = document.getElementById('formcont');
-  for (let i = 0; i < 3; i += 1) {
-    if (formval[i].type !== 'submit') {
-      localStorage.setItem(formval[i].id, JSON.stringify(formval[i].value));
-      const currentval = localStorage.getItem(formval[i].id);
-      formval[i].value = currentval.replace(/['"]+/g, '');
-    }
-  }
-}
-
-function showStyles() {
-  const formval = document.getElementById('formcont');
-  for (let i = 0; i < 3; i += 1) {
-    if (formval[i].type !== 'submit') {
-      const currentval = localStorage.getItem(formval[i].id);
-      if (currentval !== '' && currentval !== null) {
-        formval[i].value = currentval.replace(/['"]+/g, '');
-      }
-    }
-  }
 }
