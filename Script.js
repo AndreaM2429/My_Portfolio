@@ -134,6 +134,12 @@ function loadwindos(index) {
     divcg[index].appendChild(imagen(index));
     divcg[index].appendChild(imagendesk(index));
     divcg[index].appendChild(div1[index]);
+
+    if (localStorage) {
+      showStyles();
+    } else {
+      setStyles();
+    }
   });
 
   // POPUP WINDOW
@@ -307,6 +313,18 @@ function setStyles() {
       localStorage.setItem(formval[i].id, JSON.stringify(formval[i].value));
       const currentval = localStorage.getItem(formval[i].id);
       formval[i].value = currentval.replace(/['"]+/g, '');
+    }
+  }
+}
+
+function showStyles() {
+  const formval = document.getElementById('formcont');
+  for (let i = 0; i < 3; i += 1) {
+    if (formval[i].type !== 'submit') {
+      const currentval = localStorage.getItem(formval[i].id);
+      if (currentval !== '' && currentval !== null) {
+        formval[i].value = currentval.replace(/['"]+/g, '');
+      }
     }
   }
 }
