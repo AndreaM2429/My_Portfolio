@@ -268,3 +268,22 @@ formval[1].addEventListener('keydown', () => {
     clearTimeout(timeout);
   }, 1000);
 });
+formval.addEventListener('submit', (event) => {
+  function mostrar(value) {
+    const message = document.getElementById('error');
+    const emailadd = value;
+    const check = {
+      lower: /^[a-z0-9._-]+@[a-z0-9.-]+\.([a-z]{2,4})+$/,
+    };
+    if (check.lower.test(emailadd) === false) {
+      event.preventDefault();
+      message.style.display = 'flex';
+    } else {
+      // event.preventDefault()
+      message.style.display = 'none';
+      console.log(emailadd);
+    }
+    console.log(check.lower.test(emailadd));
+  }
+  mostrar(formval[1].value);
+});
