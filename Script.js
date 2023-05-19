@@ -257,3 +257,14 @@ const hidepop = document.getElementsByClassName('closepop');
 for (let i = 0; i < hidepop.length; i += 1) {
   closewindow(hidepop[i], i);
 }
+
+/// validation
+let timeout;
+const formval = document.getElementById('formcont');
+formval[1].addEventListener('keydown', () => {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    console.log('Has dejado de escribir en el input');
+    clearTimeout(timeout);
+  }, 1000);
+});
