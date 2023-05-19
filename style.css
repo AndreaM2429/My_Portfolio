@@ -588,7 +588,6 @@ input[type="submit"] {
   font-size: 17px;
   line-height: 24px;
   color: #6070ff;
-  margin-bottom: 32px;
   border-style: none;
 }
 
@@ -732,6 +731,23 @@ input[type="submit"] {
 
 .d2 {
   width: 95%;
+}
+
+#subform {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#subform p {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 15px;
+  text-align: unset;
+  color: red;
+  margin: 0;
+  max-width: 185px;
+  display: none;
 }
 
 @media (min-width: 768px) {
