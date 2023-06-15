@@ -77,7 +77,7 @@ Welcome to my portfolio, here I will let you know about my projects.
 
 > There is the link where you can see my deployed **Portfolio**
 
-- [Portfolio Link](https://andream2429.github.io/Portfolio_setup_and_mobile_first/)
+- [Portfolio Link](https://andream2429.github.io/My_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
