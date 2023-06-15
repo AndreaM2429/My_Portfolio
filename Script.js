@@ -40,12 +40,14 @@ function loadwindos(index) {
   function imagen(index) {
     const imgcard = document.createElement('img');
     imgcard.src = projects.imag[index];
+    imgcard.alt = 'Conference project';
     imgcard.className = 'mobim d2';
     return imgcard;
   }
   function imagendesk(index) {
     const imgvdes = document.createElement('img');
     imgvdes.src = projects.imagdesk[index];
+    imgvdes.alt = 'Conference project';
     imgvdes.className = 'deskim d2';
     return imgvdes;
   }
@@ -70,6 +72,7 @@ function loadwindos(index) {
     const liscont = document.createElement('li');
     const counter = document.createElement('img');
     counter.src = projects.imag[index1];
+    counter.alt = 'point';
     liscont.appendChild(counter);
     unlis.appendChild(liscont);
     const lilissec = document.createElement('li');
@@ -79,6 +82,7 @@ function loadwindos(index) {
     const liscont2 = document.createElement('li');
     const counter2 = document.createElement('img');
     counter2.src = projects.imag[index1];
+    counter2.alt = 'point';
     liscont2.appendChild(counter2);
     unlis.appendChild(liscont2);
     const lilissec2 = document.createElement('li');
@@ -150,6 +154,7 @@ function loadwindos(index) {
   closebut.className = 'closepop botonclose efecbot';
   const imgclose = document.createElement('img');
   imgclose.src = projects.imag[index4];
+  imgclose.alt = "close";
   closebut.append(imgclose);
   divtitins.appendChild(titulo(index));
   divtitins.appendChild(titulodesk(index));
@@ -188,6 +193,7 @@ function loadwindos(index) {
   butlive.append(document.createTextNode('See live'));
   const imglive = document.createElement('img');
   imglive.src = projects.imag[index5];
+  imglive.alt = "Live";
   butlive.href = projects.live;
   butlive.target = '_blank';
   butlive.appendChild(imglive);
@@ -198,6 +204,7 @@ function loadwindos(index) {
   butsour.target = '_blank';
   const imgsour = document.createElement('img');
   imgsour.src = projects.imag[index6];
+  imgsour.alt = 'GitHub';
   butsour.appendChild(imgsour);
   divbut.appendChild(butlive);
   divbut.appendChild(butsour);
