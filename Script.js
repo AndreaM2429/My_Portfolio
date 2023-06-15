@@ -24,15 +24,15 @@ for (let i = 0; i < move.length; i += 1) {
 }
 
 const projects = {
-  name: ['Tonic', 'Multi-post Stories', 'Tonic', 'Multi-post Stories'],
-  namedesk: ['Facebook 360', 'Uber Navigation', 'Tonic', 'Multi-post Stories'],
-  list: ['Canopy', 'Back End Dev', '2015'],
-  imag: ['Img/SnapshootPortfolio.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfolio3.png', 'Img/SnapshootPortfolio4.png', 'Img/icon-close.png', 'Img/iconExport.png', 'Img/github.svg', 'Img/Counter.png'],
-  imagdesk: ['Img/SnapshootPortfolio.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfoliodesk.png', 'Img/SnapshootPortfolio4.png'],
-  desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  tech: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-  live: 'https://andream2429.github.io/Portfolio_setup_and_mobile_first/',
-  source: 'https://github.com/AndreaM2429/Portfolio_setup_and_mobile_first/',
+  name: ['Conference Page'],
+  namedesk: ['Conference Page'],
+  list: ['Canopy', 'Front End Dev', '2023'],
+  imag: ['Img/Conference_Home.png', 'Img/icon-close.png', 'Img/iconExport.png', 'Img/github.svg', 'Img/Counter.png'],
+  imagdesk: ['Img/Conference_Home.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfoliodesk.png', 'Img/SnapshootPortfolio4.png'],
+  desciption: 'Is a project made with HTML, CSS and JS which purpose is to demonstrate my abilities mastering those development tools in a real case. This time the case is a conference page about comics and Superheros, the page count with two main sections that are Home and About page.',
+  tech: ['HTML', 'CSS', 'JavaScript'],
+  live: 'https://andream2429.github.io/Capstone_project_Conference_page/',
+  source: 'https://github.com/AndreaM2429/Capstone_project_Conference_page',
 };
 
 function loadwindos(index) {
@@ -61,7 +61,7 @@ function loadwindos(index) {
     titdesk.textContent = projects.namedesk[index];
     return titdesk;
   }
-  function listacards(index1 = 7) {
+  function listacards(index1 = 4) {
     const unlis = document.createElement('ul');
     const lilis1 = document.createElement('li');
     lilis1.className = 'li1';
@@ -103,10 +103,6 @@ function loadwindos(index) {
     litagsd1.className = 'norm deskim';
     litagsd1.appendChild(document.createTextNode(projects.tech[3]));
     ultags.appendChild(litagsd1);
-    const litagsd2 = document.createElement('li');
-    litagsd2.className = 'special deskim';
-    litagsd2.appendChild(document.createTextNode(projects.tech[4]));
-    ultags.appendChild(litagsd2);
     return ultags;
   }
 
@@ -138,9 +134,9 @@ function loadwindos(index) {
 
   // POPUP WINDOW
 
-  const index4 = 4;
-  const index5 = 5;
-  const index6 = 6;
+  const index4 = 1;
+  const index5 = 2;
+  const index6 = 3;
 
   const divtul = document.createElement('div');
   divtul.className = 'padingul';
@@ -166,12 +162,8 @@ function loadwindos(index) {
   const desc = document.createElement('p');
   desc.textContent = projects.desciption;
   desc.className = 'ca1p padingul';
-  const desc2 = document.createElement('p');
-  desc2.textContent = projects.desciption;
-  desc2.className = 'ca1p padingul deskim';
 
   descont.appendChild(desc);
-  descont.appendChild(desc2);
   divdesk.appendChild(descont);
 
   const divtagbut = document.createElement('div');
@@ -197,11 +189,13 @@ function loadwindos(index) {
   const imglive = document.createElement('img');
   imglive.src = projects.imag[index5];
   butlive.href = projects.live;
+  butlive.target = '_blank';
   butlive.appendChild(imglive);
   const butsour = document.createElement('a');
   butsour.className = 'boton efecbot';
   butsour.append(document.createTextNode('See source'));
   butsour.href = projects.source;
+  butsour.target = '_blank';
   const imgsour = document.createElement('img');
   imgsour.src = projects.imag[index6];
   butsour.appendChild(imgsour);
