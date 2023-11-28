@@ -23,14 +23,20 @@ const projectInfo = [
   },
 ];
 
+function showwindow(window, index, button) {
+  button.addEventListener('click', () => {
+    window.classList.add('show-popup');
+  });
+}
+
 const container = document.querySelector('.cardContainer');
 
 for (let i = 0; i <= projectInfo.length; i += 1) {
   const projectCard = document.createElement('div');
-  projectCard.className = 'card flex-direction';
+  projectCard.className = 'card flex-direction d-flex-row';
   projectCard.innerHTML = `
     <img src="${projectInfo[i].image}" alt="${projectInfo[i].name} preview" class="projectImg">
-    <div>
+    <div class="info-container">
       <h2 class="card-title">${projectInfo[i].name}</h2>
       <ul class="d-flex gap p0">
         ${projectInfo[i].list.map((item) => `<li class="list">${item}</li>`).join('&#10026')}
@@ -40,9 +46,20 @@ for (let i = 0; i <= projectInfo.length; i += 1) {
       <ul class="d-flex gap p0">
         ${projectInfo[i].tech.map((item) => `<li class="tech-list">${item}</li>`).join('')}
       </ul>
-      <button class="see-project-btn">See project</button>
+      <button id="show-popup" class="see-project-btn">See project</button>
       </div>
     </div>
   `;
+  const popup = document.createElement('div');
+  popup.className = 'popup-window';
+  popup.innerHTML = `
+    <div>
+      hola ${i}
+    </div>
+  `;
+  document.body.appendChild(popup);
   container.appendChild(projectCard);
+
+  const showpop = projectCard.querySelector('.see-project-btn');
+  showwindow(popup, i, showpop);
 }
