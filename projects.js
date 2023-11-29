@@ -23,9 +23,17 @@ const projectInfo = [
   },
 ];
 
-function showwindow(window, index, button) {
+function showwindow(window, button) {
   button.addEventListener('click', () => {
     window.classList.add('show-popup');
+    document.body.classList.add('block-scroll');
+  });
+}
+
+function closewindow(window, button) {
+  button.addEventListener('click', () => {
+    window.classList.remove('show-popup');
+    document.body.classList.remove('block-scroll');
   });
 }
 
@@ -53,13 +61,47 @@ for (let i = 0; i <= projectInfo.length; i += 1) {
   const popup = document.createElement('div');
   popup.className = 'popup-window';
   popup.innerHTML = `
-    <div>
-      hola ${i}
+    <div class="popup">
+      <div class="w-100">
+        <div class="d-flex pop-header p-10">
+          <h2 class="card-title pop-title">${projectInfo[i].name}</h2>
+          <span class="close-icon">&#10005</span>
+        </div>
+        <ul class="d-flex gap p-10 m0">
+          ${projectInfo[i].list.map((item) => `<li class="list">${item}</li>`).join('&#9827')}
+        </ul>
+      </div>
+      <img src="${projectInfo[i].image}" alt="${projectInfo[i].name} preview" class="popup-img">
+      <div class="p-10 popup-info">
+        <div class="description">
+          ${projectInfo[i].desciption}
+        </div>
+        <div class="w-40">
+          <ul class="d-flex gap p0">
+            ${projectInfo[i].tech.map((item) => `<li class="tech-list">${item}</li>`).join('')}
+          </ul>
+          <div class="d-flex gap button-container">
+            <a href="${projectInfo[i].live}" target="_blank" class="see-project-btn button-aspect gap">
+              See Live
+              <span class="material-symbols-outlined">
+                open_in_new
+              </span>
+            </a>
+            <a href="${projectInfo[i].source}" target="_blank" class="see-project-btn button-aspect gap">
+              See Source
+              <img src="Img/github.svg" >
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   `;
   document.body.appendChild(popup);
   container.appendChild(projectCard);
 
   const showpop = projectCard.querySelector('.see-project-btn');
-  showwindow(popup, i, showpop);
+  showwindow(popup, showpop);
+
+  const closepop = popup.querySelector('.close-icon');
+  closewindow(popup, closepop);
 }
