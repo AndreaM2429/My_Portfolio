@@ -3,18 +3,21 @@ const navWrapper = document.getElementById('navmob');
 menu.addEventListener('click', () => {
   navWrapper.classList.add('show');
   menu.style.display = 'none';
+  document.body.classList.add('block-scroll');
 });
 
 const close = document.getElementById('close');
 close.addEventListener('click', () => {
   navWrapper.classList.remove('show');
   menu.style.display = 'inline-block';
+  document.body.classList.remove('block-scroll');
 });
 
 function moveon(link) {
   link.addEventListener('click', () => {
     navWrapper.classList.remove('show');
     menu.style.display = 'inline-block';
+    document.body.classList.remove('block-scroll');
   });
 }
 
@@ -24,8 +27,8 @@ for (let i = 0; i < move.length; i += 1) {
 }
 
 const projects = {
-  name: ['Conference Page'],
-  namedesk: ['Conference Page'],
+  name: ['Conference Page', 'To Do List'],
+  namedesk: ['Conference Page', 'To Do List'],
   list: ['Canopy', 'Front End Dev', '2023'],
   imag: ['Img/Conference_Home.png', 'Img/icon-close.png', 'Img/iconExport.png', 'Img/github.svg', 'Img/Counter.png'],
   imagdesk: ['Img/Conference_Home.png', 'Img/SnapshootPortfolio2.png', 'Img/SnapshootPortfoliodesk.png', 'Img/SnapshootPortfolio4.png'],
