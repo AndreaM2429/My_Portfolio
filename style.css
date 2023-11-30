@@ -48,7 +48,7 @@ nav a {
   display: none;
 }
 
-.mobimg img {
+.mobimg span {
   width: 19px;
   height: 19px;
   padding: 20px;
@@ -139,7 +139,7 @@ desc {
   top: 91px;
 }
 
-.desc h2 {
+.desc h1 {
   width: 327px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -148,7 +148,7 @@ desc {
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .desc p {
@@ -364,7 +364,15 @@ h1,
   align-items: flex-start;
 }
 
-.desc2 button {
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.desc2 button,
+.resume {
   width: 162px;
   height: 48px;
   border: 1px solid #6070ff;
@@ -418,7 +426,7 @@ h1,
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  width: 80%;
+  width: 50%;
   padding: 2px;
 }
 
@@ -486,7 +494,7 @@ h1,
   width: 90%;
 }
 
-.loglan img {
+.loglan span {
   margin-left: 12px;
 }
 
@@ -631,7 +639,7 @@ input[type="submit"] {
   gap: 10px;
   width: 92%;
   height: 90vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .pop {
@@ -808,7 +816,6 @@ input[type="submit"] {
   }
 
   #hambur,
-  .desc h2,
   .mobim,
   #barrita,
   #barrita2 {
@@ -855,17 +862,12 @@ input[type="submit"] {
   }
 
   .desc h1 {
+    width: auto;
     margin: 0;
     height: 122px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.37px;
-    color: #091e42;
   }
 
   .desc p {
@@ -875,7 +877,7 @@ input[type="submit"] {
   }
 
   .enlaces ul {
-    width: 200px;
+    width: 100px;
   }
 
   .works {
@@ -953,15 +955,16 @@ input[type="submit"] {
     width: 75px;
     height: 80px;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
     padding: 5px;
     gap: 1px;
   }
 
-  .loglan img {
+  .loglan span {
+    display: flex;
+    justify-content: center;
     margin: 0;
-    width: 40%;
+    width: 70px;
   }
 
   .glis {
@@ -970,6 +973,7 @@ input[type="submit"] {
 
   .gal {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 7px;
     font-size: 80%;
   }

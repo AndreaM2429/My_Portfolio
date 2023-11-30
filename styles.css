@@ -146,6 +146,8 @@
 
 .close-icon {
   font-size: 30px;
+  display: flex;
+  cursor: default;
 }
 
 .description {
@@ -171,6 +173,24 @@
   justify-content: center;
 }
 
+.icons {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-left: 12px;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.popup-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .d-flex-row {
     flex-direction: row;
@@ -178,7 +198,7 @@
   }
 
   .projectImg {
-    width: 50%;
+    width: 30%;
   }
 
   .cardContainer {
@@ -231,6 +251,12 @@
   .button-container {
     justify-content: start;
   }
+
+  .icons {
+    margin-left: 0;
+    width: 50%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -243,6 +269,6 @@
   }
 
   .popup-img {
-    max-width: 737px;
+    max-width: 700px;
   }
 }
