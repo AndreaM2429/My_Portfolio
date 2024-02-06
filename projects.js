@@ -171,3 +171,29 @@ for (let i = 0; i < projectInfo.length; i += 1) {
   const closepop = popup.querySelector('.close-icon');
   closewindow(popup, closepop);
 }
+
+/// validation
+let timeout;
+const formval = document.getElementById('formcont');
+formval[1].addEventListener('keydown', () => {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    clearTimeout(timeout);
+  }, 1000);
+});
+formval.addEventListener('submit', (event) => {
+  function mostrar(value) {
+    const message = document.getElementById('error');
+    const emailadd = value;
+    const check = {
+      lower: /^[a-z0-9._-]+@[a-z0-9.-]+\.([a-z]{2,4})+$/,
+    };
+    if (check.lower.test(emailadd) === false) {
+      event.preventDefault();
+      message.style.display = 'flex';
+    } else {
+      message.style.display = 'none';
+    }
+  }
+  mostrar(formval[1].value);
+});
