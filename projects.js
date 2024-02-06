@@ -1,3 +1,4 @@
+// Project's information
 const projectInfo = [
   {
     name: 'API Dishes',
@@ -103,6 +104,7 @@ function closewindow(window, button) {
   });
 }
 
+// Create pop up windows for each project
 const container = document.querySelector('.cardContainer');
 
 for (let i = 0; i < projectInfo.length; i += 1) {
@@ -172,7 +174,7 @@ for (let i = 0; i < projectInfo.length; i += 1) {
   closewindow(popup, closepop);
 }
 
-/// validation
+/// validation form
 let timeout;
 const formval = document.getElementById('formcont');
 formval[1].addEventListener('keydown', () => {
@@ -197,3 +199,32 @@ formval.addEventListener('submit', (event) => {
   }
   mostrar(formval[1].value);
 });
+
+// Show/Hide mobile menu
+const menu = document.getElementById('hambur');
+const navWrapper = document.getElementById('navmob');
+menu.addEventListener('click', () => {
+  navWrapper.classList.add('show');
+  menu.style.display = 'none';
+  document.body.classList.add('block-scroll');
+});
+
+const close = document.getElementById('close');
+close.addEventListener('click', () => {
+  navWrapper.classList.remove('show');
+  menu.style.display = 'inline-block';
+  document.body.classList.remove('block-scroll');
+});
+
+function moveon(link) {
+  link.addEventListener('click', () => {
+    navWrapper.classList.remove('show');
+    menu.style.display = 'inline-block';
+    document.body.classList.remove('block-scroll');
+  });
+}
+
+const move = document.getElementsByClassName('move');
+for (let i = 0; i < move.length; i += 1) {
+  moveon(move[i]);
+}
