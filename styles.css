@@ -182,7 +182,7 @@
 }
 
 .logo {
-  width: 50px;
+  width: 30px;
   border-radius: 30px;
 }
 
@@ -192,6 +192,10 @@
 }
 
 @media (min-width: 768px) {
+  .logo {
+    width: 50px;
+  }
+
   .d-flex-row {
     flex-direction: row;
     gap: 17px;
