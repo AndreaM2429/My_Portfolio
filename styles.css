@@ -1,5 +1,5 @@
 .block-scroll {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .w-100 {
@@ -248,6 +248,7 @@
   .description {
     width: 55%;
   }
+
   .w-40 {
     width: 40%;
   }

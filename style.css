@@ -139,6 +139,12 @@ desc {
   top: 91px;
 }
 
+.menudesk,
+h1,
+.deskim {
+  display: none;
+}
+
 .desc h1 {
   width: 327px;
   font-family: 'Poppins', sans-serif;
@@ -182,12 +188,6 @@ desc {
 
 .enlaces img {
   width: 19px;
-}
-
-.menudesk,
-h1,
-.deskim {
-  display: none;
 }
 
 .works {
