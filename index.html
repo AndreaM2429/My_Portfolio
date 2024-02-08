@@ -6,60 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="icon" href="Img/logo.png">
+  <title>Andrea Manuel</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <a id="logo" href="index.html">My logo</a>
+      <a id="logo" href="index.html"><img src="Img/logo.png" alt="Andrea" class="logo"></a>
       <button id="hambur" class="menu efecbot"><img src="Img/Icon - Menu.png" alt="Menu mobil"></button>
       <section class="menudesk">
-        <a href="">Portfolio</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#aboutme">About</a>
+        <a href="#contact">Contact</a>
       </section>
     </nav>
     <div id="navmob" class="mobmen">
-      <div class="mobimg"><img id="close" src="Img/Icon-close.png" alt="close"></div>
+      <div class="mobimg"><span id="close" class="close-icon">&#10005</span></div>
       <ul class="listyle">
-        <li><a href="#portfolio" class="move">Portfolio</a></li>
+        <li><a href="#projects" class="move">Portfolio</a></li>
         <li><a href="#aboutme" class="move">About</a></li>
         <li><a href="#contact" class="move">Contact</a></li>
       </ul>
-      <div id="barrita"><img src="Img/Shape.png" alt="barra final"></div>
     </div>
   </header>
   <section class="info">
     <div class="desc">
-      <h1>I'm Andrea.<br>Glad to see you!</h1>
-      <h2>I'm Andrea.<br>Glad to see you!</h2>
-      <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-        experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+      <h1>I'm Andrea Manuel.<br>Glad to see you!</h1>
+      <p>I'm an enthusiastic full-stack developer! I would enjoy and love help you build a product, feature or website.
+        Look through some of my work and experience!
+        If you like what you see and have a project you need coded, don’t hesitate to contact me.
+      </p>
       <div class="enlaces">
         <p>Let's conect</p>
         <ul>
           <li>
-            <a href=""><img src="Img/twitter.svg" alt="twitter"></a>
+            <a href="https://twitter.com/AndreaManuelOr1" target="_blank"><img src="Img/twitter.svg" alt="twitter"></a>
           </li>
           <li>
-            <a href=""><img src="Img/Linkedin icon.svg" alt="Linkedin"></a>
+            <a href="https://www.linkedin.com/in/andreamanuelortiz/" target="_blank"><img src="Img/Linkedin icon.svg" alt="Linkedin"></a>
           </li>
           <li>
-            <a href=""><img src="Img/medium.svg" alt="medium"></a>
-          </li>
-          <li>
-            <a href=""><img src="Img/github.svg" alt="github"></a>
-          </li>
-          <li>
-            <a href=""><img src="Img/angellist.svg" alt="angellist"></a>
+            <a href="https://github.com/AndreaM2429" target="_blank"><img src="Img/github.svg" alt="github"></a>
           </li>
         </ul>
       </div>
     </div>
   </section>
-  <section id="portfolio" class="works">
+  <section id="projects" class="cardContainer flex-direction"></section>
+  <!-- <section id="portfolio" class="works">
     <div class="card1 cg">
       <div class="deskdisp">
         <div class="c1desc"></div>
@@ -68,65 +66,103 @@
         <button class="efecbot showpop">See project</button>
       </div>
     </div>
-  </section>
+  </section> -->
   <section id="aboutme" class="aboutme">
     <div class="aboutinfo">
       <div class="desc2">
-        <h1>About my self</h1>
         <h2>About my self</h2>
-        <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work! 
-          If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <p>
+          I am an Information Technology Engineer and an enthusiastic full-stack developer passionate about reading, swimming,
+          and keeping in contact with nature. I have had the opportunity to develop and deploy +10 different projects, individually
+          and also at remote collaborative teams where my skills in maintaining a steady work pace and learning new things quickly
+          have been highlighted on numerous occasions and have played a crucial role in the success of these projects.
+        </p>
         <div class="enlaces2">
           <h6>Let's conect</h6>
           <ul>
             <li>
-              <a href=""><img src="Img/twitter.svg" alt="twitter"></a>
+              <a href="https://twitter.com/AndreaManuelOr1" target="_blank"><img src="Img/twitter.svg" alt="twitter"></a>
             </li>
             <li>
-              <a href=""><img src="Img/Linkedin icon.svg" alt="linkedin"></a>
+              <a href="https://www.linkedin.com/in/andreamanuelortiz/" target="_blank"><img src="Img/Linkedin icon.svg" alt="linkedin"></a>
             </li>
             <li>
-              <a href=""><img src="Img/medium.svg" alt="medium"></a>
-            </li>
-            <li>
-              <a href=""><img src="Img/github.svg" alt="github"></a>
-            </li>
-            <li>
-              <a href=""><img src="Img/angellist.svg" alt="angellist"></a>
+              <a href="https://github.com/AndreaM2429" target="_blank"><img src="Img/github.svg" alt="github"></a>
             </li>
           </ul>
         </div>
-        <button class="efecbot">Get my resume</button>
+        <a href="Img/projects/Andrea's resume.pdf" target="_blank" class="resume efecbot">Get my resume</a>
       </div>
       <div class="skills">
         <ul class="mainlis">
           <li>
             <div class="glis">
               <h6>Languajes</h6>
-              <button class="more efecbot"><img src="Img/Disabled.png" alt="disabled"></button>
             </div>
             <ul class="gal">
               <li class="loglan">
-                <img src="Img/log js.png" alt="JS">
+                <img src="Img/log js.png" alt="JS" class="icons">
                 JavaScript
               </li>
               <li class="loglan">
-                <img src="Img/log html.png" alt="HTML">
+                <img src="Img/log html.png" alt="HTML" class="icons">
                 HTML
               </li>
               <li class="loglan">
-                <img src="Img/log css.png" alt="CSS">
+                <img src="Img/log css.png" alt="CSS" class="icons">
                 CSS
+              </li>
+              <li class="loglan">
+                <img src="Img/ruby.png" alt="Ruby" class="icons">
+                Ruby
               </li>
             </ul>
           </li>
-          <li class="glis bottom">
-            <h6>Frameworks</h5>
-              <button class="more efecbot"><img src="Img/enable.png" alt="enable"></button>
+          <li>
+            <div class="glis bottom">
+              <h6>Frameworks</h6>
+            </div>
+            <ul class="gal">
+              <li class="loglan">
+                <img src="Img/react.png" alt="Reacr/Redux" class="icons">
+                <span>React/Redux</span>
+              </li>
+              <li class="loglan">
+                <img src="Img/rails.png" alt="Rails" class="icons">
+                <span>Ruby on Rails</span>
+              </li>
+              <li class="loglan">
+                <img src="Img/bootstrap.png" alt="Bootstrap" class="icons">
+                <span>Bootstrap</span>
+              </li>
+              <li class="loglan">
+                <img src="Img/jest.png" alt="Jest" class="icons">
+                <span>Jest</span>
+              </li>
+              <li class="loglan">
+                <img src="Img/rspec.svg" alt="Rspec" class="icons">
+                <span>Rspec</span>
+              </li>
+            </ul>
           </li>
-          <li class="glis bottom">
-            <h6>Skills</h6>
-            <button class="more efecbot"><img src="Img/enable.png" alt="enable"></button>
+          <li>
+            <div class="glis bottom">
+              <h6>Skills, Tools & Methods</h6>
+            </div>
+            <ul class="gal">
+              <li class="loglan">
+                <span>Remote work</span>
+              </li>
+              <li class="loglan">
+                <span>Git/Github</span>
+              </li>
+              <li class="loglan">
+                <span>TDD</span>
+              </li>
+              <li class="loglan">
+                <span>Mentoring, Teamwork</span>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -150,10 +186,9 @@
         </div>
       </form>
     </div>
-    <img src="Img/Shape.png" alt="barra final" id="barrita">
   </section>
 </body>
 
-<script src="Script.js"></script>
+<script src="projects.js"></script>
 
 </html>
